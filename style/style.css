@@ -1,0 +1,188 @@
+:root{
+    --pr_bananaYellow: #ffbf46;
+    --pr_bananaYellow--40: #ffbf4664;
+    --pr_elephantBlue: #21353e;
+    --pr_meadowGreen: #1ca078;
+    --pr_cream: #e7e5d9;
+    --se_salmon: #eb5e55;
+    --se_lightGreen: #82c3a9;
+    --se_blueGreen: #1b9aaa;
+    --se_pink: #e9a297;
+    --se_lobster: #832232;
+    --se_lightCream: #f3efeb;
+    --ne_offBlack: #13171a;
+    --ne_offWhite: #fff9fc;
+    --ne_grey: #89888a;
+    --ne_lightGrey: #c4c0c3;
+}
+/*20% = #32  40% = #64  60% = #96  80% = #'128*/
+
+*{
+    box-sizing: border-box;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 375px;
+    height: 780px;
+    border: 1px solid white;
+    border-radius: 40px;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+.center::-webkit-scrollbar{
+    display: none;
+}
+.app{
+    padding: 0 25px;
+}
+
+.bg__dark{
+    background-color: var(--pr_elephantBlue);
+}
+.bg__light{
+    background-color: var(--se_lightCream);
+}
+.bg__green{
+    background-color: var(--pr_meadowGreen);
+}
+.bg__pattern1{
+    background-repeat: no-repeat;
+    background-image: url(../assets/pattern1.svg);
+    background-position: -63px -70px;
+    background-size: 450px 561px;
+}
+.bg__pattern2{
+    background-repeat: no-repeat;
+    background-image: url(../assets/pattern2.svg);
+    background-position: 0px 336px;
+    background-size: 372px 511px;
+}
+.bg__pattern3{
+    background-repeat: no-repeat;
+    background-image: url(../assets/pattern3.svg);
+    background-position: 0px -40px;
+    background-size: 372px 511px;
+}
+
+.intro{
+    margin-top: 520px;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 8px 20px 8px 20px;
+}
+.btn--form{
+    color: var(--ne_offWhite);
+    background-color: var(--pr_meadowGreen);
+    border: none;
+    position: sticky;
+    bottom: 20px;
+    float: right;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
+}
+.btn--yellow{
+    background-color: var(--pr_bananaYellow);
+}
+.btn--white{
+    background-color: var(--ne_offWhite);
+}
+.btn--back{
+    margin-top: 53.5px;
+    display: block;
+    width: 12px;
+    height: 22px;
+    background-image: url(../assets/icons/icon_back.svg);
+    background-repeat: no-repeat;
+}
+.btn--large{
+    width: 172px;
+}
+.btn--fixed{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.progressbar{
+    display: grid;
+    grid-template-columns: 14% 86%;
+    margin-bottom: 30px;
+}
+.progress{
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+}
+.bar{
+    background-color: var(--pr_bananaYellow--40);
+    display: inline-block;
+    width: 31%;
+    height: 4px;
+    border-radius: 50px;
+}
+.bar--filled{
+    background-color: var(--pr_bananaYellow);
+}
+
+
+/* ----- FORMS ----- */
+.form__input *{
+    display: block;
+    width: 100%;
+}
+.form__input label{
+    margin-bottom: 6px;
+}
+.form__input input, .form__input textarea, .form__input select{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 33px;
+    text-indent: 12px;  
+    height: 40px;  
+}
+.form__input input:focus, .form__input textarea:focus, .form__input select:focus{
+    outline: none;
+}
+
+.form__radio{
+    margin-bottom: 15px;
+}
+
+input[type="radio"]{
+    color: red;
+}
+
+
+
+.post__prevImage {
+    border-radius: 10px;
+    background-color: red;
+    height: 185px;
+    width: 295px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.prevContainer {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+.prev{
+    height: 194px;
+    width: 100%;
+    object-fit: cover;
+}
+.addStudentCard{
+    display: none;
+}
