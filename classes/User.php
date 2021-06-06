@@ -196,6 +196,26 @@
             $statement->execute();
         }
 
+        public function canLogin($password){
+            $email = $this->getEmail();
+
+            $conn = Db::getConnection();
+            $statement = $conn->prepare("SELECT * FROM users WHERE email = :email");
+            $statement->bindValue(":email", $email);
+            $statement->execute();
+            $result = $statement->fetch(PDO::FETCH_ASSOC);
+            if(!$result){
+                return false;
+            }
+
+            $pw_hash = $result['password'];
+            if(password_verify($password, $pw_hash)){
+                return true;
+            } else{
+                return false;
+            }
+        }
+
         public function getIdByEmail(){
             $conn = Db::getConnection();
             $statement = $conn->prepare("SELECT id FROM users WHERE email = :email");
@@ -216,11 +236,11 @@
             return $result;
         }
 
-        public function startSession(){
+        public function startSession($dest = 'studentcard'){
             session_start();
             $id = $this->getId();
             $_SESSION['id'] = $id;
-            header('location: studentcard.php');
+            header('location: ' . $dest . '.php');
         }
 
         public function addCardInfo($id){

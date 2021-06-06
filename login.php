@@ -26,7 +26,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Registreer als student</title>
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/paragraphstyles.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
@@ -36,10 +36,25 @@
 <div class="app">
     
 
-    <h2 style="margin-top: 100px;">Index</h2>
+    <h2 style="margin-top: 100px;">Aanmelden</h2>
    
-   
+    <form action="" method="POST">
+        
+        <div class="form__input">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="jane@gmail.com">
+        </div>
+        <div class="form__input">
+            <label for="password">Wachtwoord</label>
+            <input type="text" id="password" name="password" placeholder="• • • • • • • •">
+        </div>
 
+        <input type="submit" class="btn btn--form" value="Aanmelden">
+    </form>
+
+    <?php if(isset($error)): ?>
+        <p class="feedback fail"><?php echo $error ?></p>
+    <?php endif; ?>
 
 </div>
 </section>
