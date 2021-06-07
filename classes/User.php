@@ -134,7 +134,7 @@
         public function setGardenpreference($gardenPreference, $id) {
             $this->gardenPreference = $gardenPreference;
             $conn = Db::getConnection();
-            $statement = $conn->prepare("UPDATE users SET garden_preference = :gardenPreference WHERE id = :id");
+            $statement = $conn->prepare("UPDATE users SET gardens_id = :gardenPreference WHERE id = :id");
             $statement->bindValue(":gardenPreference", $gardenPreference);
             $statement->bindValue(":id", $id);
             $statement->execute();
@@ -193,7 +193,8 @@
             $statement->bindValue(":school", $school);
             $statement->bindValue(":studentNumber", $studentNumber);
             
-            $statement->execute();
+            $result = $statement->execute();
+            var_dump($result);
         }
 
         public function canLogin($password){
@@ -229,7 +230,8 @@
 
         public static function getUserDataFromId($id){
             $conn = Db::getConnection();
-            $statement = $conn->prepare("SELECT * FROM users WHERE id = :id");
+            //$statement = $conn->prepare("SELECT * FROM users WHERE id = :id");
+            $statement = $conn->prepare("SELECT * FROM users INNER JOIN gardens ON users.gardens_id = gardens.id WHERE users.id = :id");
             $statement->bindValue(":id", $id);
             $statement->execute();
             $result = $statement->fetch(PDO::FETCH_OBJ);

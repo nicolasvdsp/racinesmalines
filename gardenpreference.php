@@ -13,6 +13,7 @@
     }
 
     if(!empty($_POST)){
+        echo $_POST['gardenpreference'];
         $u->setGardenpreference($_POST['gardenpreference'], $sessionId);
         header('location: request.php');
     }
@@ -45,15 +46,15 @@
 
     <form action="" method="POST">
     <div class="form__radio">
-        <input type="radio" id="caputsteen" name="gardenpreference" value="Caputsteenpark">
+        <input type="radio" id="caputsteen" name="gardenpreference" value="1">
         <label for="caputsteen">Samentuin Caputsteenpark</label>
     </div>
     <div class="form__radio">
-        <input type="radio" id="tivoli" name="gardenpreference" value="Tivolidomein">
+        <input type="radio" id="tivoli" name="gardenpreference" value="2">
         <label for="tivoli">Samentuin domein Tivoli</label>
     </div>
     <div class="form__radio">
-        <input type="radio" id="nopreference" name="gardenpreference" value="Captusteenpark" checked>
+        <input type="radio" id="nopreference" name="gardenpreference" value="1">
         <label for="nopreference">Geen voorkeur</label>
     </div>
 

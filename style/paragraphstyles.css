@@ -26,6 +26,11 @@
 }
 @font-face {
     font-family: Friends;
+    src: url(../assets/fonts/Friends-Regular.ttf);
+    font-size: thin;
+}
+@font-face {
+    font-family: Friends;
     src: url(../assets/fonts/Friends-NormalItalic.ttf);
     font-style: italic;
 }
@@ -49,6 +54,9 @@
 }
 .bold{
     font-style: bold;
+}
+.underline{
+    text-decoration: underline;
 }
 .alignC{
     text-align: center;
@@ -76,6 +84,7 @@ h3{
 .bodyText, a, p, .form__input *, .form__radio *{
     font-family: Friends;
     font-size: 16px;
+    font-style: normal;
 }
 
 .bodyText, p{

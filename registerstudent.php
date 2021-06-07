@@ -18,6 +18,7 @@
             $id = $u->getIdByEmail();
             $u->setId($id);
             $user = User::getUserDataFromId($id);
+            // var_dump($user);
             $u->startSession();
             
         } catch (\Throwable $th) {

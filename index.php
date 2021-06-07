@@ -4,21 +4,10 @@
     include_once(__DIR__ . "/classes/Db.php");
 
     $u = new User;
-    if(!empty($_POST)){
-        try {
-            $u->setEmail($_POST['email']);
-            $u->setPassword($_POST['password']);
-
-            if($u->canLogin($_POST['password'])){
-                $id = $u->getIdByEmail();
-                $u->setId($id);
-                $u->startSession('index');
-            }
-            
-        } catch (\Throwable $th) {
-            $error = $th->getMessage();
-        }
-    }        
+    session_start();
+    // $sessionId = $_SESSION['id'];
+    // $userdata = User::getUserDataFromId($sessionId);  
+    $userdata = User::getUserDataFromId(28);  
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -34,13 +23,15 @@
 <body class="bg__dark">
 <section class="center  bg__light">
 <div class="app">
-    
 
-    <h2 style="margin-top: 100px;">Index</h2>
+    <div class="logo--header">
+        <img src="assets/logo_racinesmalines.svg" alt="Logo Racines Malines">
+        <a href="gardendetail.php">Lid <span class="underline"><?php echo $userdata->garden_name; ?></span></a>
+    </div>
    
     <div class="cardview" style="padding-bottom: 24px;">
         <h3 class="btnSpaceBefore">Navigeer naar de moestuin</h3>
-        <a href="https://www.google.be" class="btn btn--green btn--margin maps">Navigeer met Maps</a>
+        <a href="https://www.google.be" class="btn btn--green btn--margin maps" data-gardenname="<?php echo $userdata->garden_name; ?>" data-gardencity="<?php echo $userdata->garden_city; ?>" data-gardenstreet="<?php echo $userdata->garden_street; ?>" data-gardenhousenumber="<?php echo $userdata->garden_houseNumber; ?>">Navigeer met Maps</a>
     </div>
     <a class="cardview cardview--connect btn--max"><h3 class="white alignC">Maak kennis met leden uit je moestuin</h3></a>
     <div class="cardview">
@@ -62,5 +53,6 @@
 
 </div>
 </section>
+<script src="javascript/location.js"></script>
 </body>
 </html>
