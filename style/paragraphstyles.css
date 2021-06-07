@@ -50,6 +50,9 @@
 .bold{
     font-style: bold;
 }
+.alignC{
+    text-align: center;
+}
 h1, h2, h3, h4, h5, h6{
     font-family: Muriza;
     font-weight: bold;
@@ -65,8 +68,9 @@ h2{
     line-height: 101.8%;
 }
 h3{
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 9px;
+    line-height: 27.7px;
 }
 
 .bodyText, a, p, .form__input *, .form__radio *{
@@ -77,6 +81,13 @@ h3{
 .bodyText, p{
     margin-bottom: 35px;
     line-height: 24.1px;
+}
+
+.btnSpaceBefore{
+    margin-bottom: 23px;
+}
+.btnSpaceAfter{
+    margin-top: 23px;
 }
 
 .btn{
@@ -109,24 +120,3 @@ h3{
     border-radius: 10px;
 }
 
-.info{
-    background-image: url(../assets/icons/icon_info.svg);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: 0px 4px;
-    margin-top: 12px;
-    color: var(--ne_grey);
-    padding-left: 20px;
-}
-.mail, .phone{
-    background-image: url(../assets/icons/icon_mail.svg);
-    background-repeat: no-repeat;
-    background-size: 19px 19px;
-    background-position: 0px 3px;
-    margin-bottom: 10px;
-    color: var(--ne_offWhite);
-    padding-left: 30px;
-}
-.phone{
-    background-image: url(../assets/icons/icon_phone.svg);
-}

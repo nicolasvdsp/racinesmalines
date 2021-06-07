@@ -3,6 +3,7 @@
     --pr_bananaYellow--40: #ffbf4664;
     --pr_elephantBlue: #21353e;
     --pr_meadowGreen: #1ca078;
+    --pr_meadowGreen--60: #1ca07896;
     --pr_cream: #e7e5d9;
     --se_salmon: #eb5e55;
     --se_lightGreen: #82c3a9;
@@ -94,6 +95,13 @@
 .btn--white{
     background-color: var(--ne_offWhite);
 }
+.btn--green{
+    background-color: var(--pr_meadowGreen);
+    color: var(--ne_offWhite);
+}
+.btn--margin{
+    margin-top: 15px;
+}
 .btn--back{
     margin-top: 53.5px;
     display: block;
@@ -104,6 +112,13 @@
 }
 .btn--large{
     width: 172px;
+}
+.btn--var{
+    width: fit-content;
+}
+.btn--max{
+    display: block;
+    width: 100%;
 }
 .btn--fixed{
     position: fixed;
@@ -161,6 +176,96 @@ input[type="radio"]{
 }
 
 
+
+/* ----- CARDS ----- */
+.cardview{
+    border-radius: 10px;
+    background-color: var(--ne_offWhite);
+    width: 100%;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
+    padding: 16px 10px 16px 16px;
+    margin-bottom: 30px;
+}
+
+.cardview--connect{
+    background-image: url(../assets/connect.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 33px;
+}
+
+
+/* ----- VISUAL STYLES ----- */
+.info{
+    background-image: url(../assets/icons/icon_info.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 0px 4px;
+    margin-top: 12px;
+    color: var(--ne_grey);
+    padding-left: 20px;
+}
+.mail, .phone, .maps, .lock{
+    background-image: url(../assets/icons/icon_mail.svg);
+    background-repeat: no-repeat;
+    background-size: 19px 19px;
+    background-position: 0px 3px;
+    margin-bottom: 10px;
+    color: var(--ne_offWhite);
+    padding-left: 30px;
+}
+.phone{
+    background-image: url(../assets/icons/icon_phone.svg);
+}
+.maps, .lock{
+    background-image: url(../assets/icons/icon_maps.svg);
+    padding-left: 40px;
+    background-size: auto 22px;
+    background-position: 10px 7px;
+}
+.lock{
+    background-image: url(../assets/icons/icon_lock.svg);
+}
+
+
+/*----- NAVIGATIONBAR -----*/
+.navbar{
+    padding: 25px;
+    height: 98px;
+    background-color: var(--ne_offWhite);
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    transform: translateX(-25px);
+    width: calc(100% + 50px);
+    filter: drop-shadow(0px 4px 8px rgb(0,0,0,0.25));
+}
+
+.navbar__btn{
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% -1px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(../assets/icons/icon_home.svg);
+}
+.navbar__btn:nth-of-type(2){
+    background-image: url(../assets/icons/icon_tips.svg);
+}
+.navbar__btn:nth-of-type(3){
+    background-image: url(../assets/icons/icon_chat.svg);
+}
+.navbar__btn:nth-of-type(4){
+    background-image: url(../assets/icons/icon_settings.svg);
+}
 
 .post__prevImage {
     border-radius: 10px;
