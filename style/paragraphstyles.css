@@ -13,12 +13,12 @@
     --se_lightCream: #f3efeb;
 
     --ne_offBlack: #13171a;
+    --ne_offBlack--60: #13171a96;
     --ne_offWhite: #fff9fc;
     --ne_grey: #89888a;
     --ne_lightGrey: #c4c0c3;
 }
 /*20% = #32  40% = #64  60% = #96  80% = #'128*/
-
 @font-face {
     font-family: Friends;
     src: url(../assets/fonts/Friends-Normal.ttf);
@@ -81,7 +81,8 @@ h3{
     line-height: 27.7px;
 }
 
-.bodyText, a, p, .form__input *, .form__radio *{
+.bodyText, a, p, .form__input *, .form__radio *, span{
+    color: var(--ne_offBlack);
     font-family: Friends;
     font-size: 16px;
     font-style: normal;

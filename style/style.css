@@ -3,15 +3,17 @@
     --pr_bananaYellow--40: #ffbf4664;
     --pr_elephantBlue: #21353e;
     --pr_meadowGreen: #1ca078;
-    --pr_meadowGreen--60: #1ca07896;
     --pr_cream: #e7e5d9;
+
     --se_salmon: #eb5e55;
     --se_lightGreen: #82c3a9;
     --se_blueGreen: #1b9aaa;
     --se_pink: #e9a297;
     --se_lobster: #832232;
     --se_lightCream: #f3efeb;
+
     --ne_offBlack: #13171a;
+    --ne_offBlack--60: #13171a96;
     --ne_offWhite: #fff9fc;
     --ne_grey: #89888a;
     --ne_lightGrey: #c4c0c3;
@@ -248,23 +250,33 @@ input[type="radio"]{
     filter: drop-shadow(0px 4px 8px rgb(0,0,0,0.25));
 }
 
-.navbar__btn{
-    height: 50px;
+.navbar__btn__icon{
+    width: 24px;
+    color: var(--ne_offBlack--60);
+    height: 24px;
     background-repeat: no-repeat;
-    background-position: 50% -1px;
+    background-position: 50% 0px;
+    background-size: 24px;
+    background-image: url(../assets/icons/icon_home.svg);
+    margin: 0px auto 8px;
+}
+.navbar__btn:nth-of-type(2) .navbar__btn__icon{
+    background-image: url(../assets/icons/icon_tips.svg);
+}
+.navbar__btn:nth-of-type(3) .navbar__btn__icon{
+    background-image: url(../assets/icons/icon_chat.svg);
+}
+.navbar__btn:nth-of-type(4) .navbar__btn__icon{
+    background-image: url(../assets/icons/icon_settings.svg);
+}
+.nabvar__btn{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(../assets/icons/icon_home.svg);
 }
-.navbar__btn:nth-of-type(2){
-    background-image: url(../assets/icons/icon_tips.svg);
-}
-.navbar__btn:nth-of-type(3){
-    background-image: url(../assets/icons/icon_chat.svg);
-}
-.navbar__btn:nth-of-type(4){
-    background-image: url(../assets/icons/icon_settings.svg);
+.navbar__btn--selected{
+    color: var(--ne_offBlack);
+    background-position-y: -24px;
 }
 
 .post__prevImage {
