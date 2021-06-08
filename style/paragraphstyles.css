@@ -52,6 +52,9 @@
 .yellow{
     color: var(--pr_bananaYellow);
 }
+.black{
+    color: var(--ne_offBlack);
+}
 .bold{
     font-style: bold;
 }
@@ -81,7 +84,7 @@ h3{
     line-height: 27.7px;
 }
 
-.bodyText, a, p, .form__input *, .form__radio *, span{
+.bodyText, a, p, .form__input *, .form__radio *, .form__input--twocolumns *, span{
     color: var(--ne_offBlack);
     font-family: Friends;
     font-size: 16px;

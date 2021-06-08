@@ -194,7 +194,7 @@
             $statement->bindValue(":studentNumber", $studentNumber);
             
             $result = $statement->execute();
-            var_dump($result);
+            // var_dump($result);
         }
 
         public function canLogin($password){
@@ -254,7 +254,7 @@
             $statement->bindValue(":studentCardBack", $studentCardBack);
             $statement->bindValue(":id", $id);
             $result = $statement->execute();
-            var_dump($result);
+            // var_dump($result);
         }
 
         public function saveCards($fileName1, $fileTmpName1, $fileSize1, $fileName2, $fileTmpName2, $fileSize2){

@@ -155,6 +155,10 @@
     display: block;
     width: 100%;
 }
+.form__input--twocolumns{
+    display: inline-block;
+    width: 49%;
+}
 .form__input label{
     margin-bottom: 6px;
 }

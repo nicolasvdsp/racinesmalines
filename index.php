@@ -5,9 +5,9 @@
 
     $u = new User;
     session_start();
-    // $sessionId = $_SESSION['id'];
-    // $userdata = User::getUserDataFromId($sessionId);  
-    $userdata = User::getUserDataFromId(28);  
+    $sessionId = $_SESSION['id'];
+    $userdata = User::getUserDataFromId($sessionId);  
+    // $userdata = User::getUserDataFromId(28);  
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -28,6 +28,8 @@
         <img src="assets/logo_racinesmalines.svg" alt="Logo Racines Malines">
         <a href="gardendetail.php">Lid <span class="underline"><?php echo $userdata->garden_name; ?></span></a>
     </div>
+
+    <p><?php echo $userdata->firstname; ?></p>
    
     <div class="cardview" style="padding-bottom: 24px;">
         <h3 class="btnSpaceBefore">Navigeer naar de moestuin</h3>
