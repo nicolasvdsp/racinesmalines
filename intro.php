@@ -24,6 +24,7 @@ $u = new User;
                 <p class="bodyText white" style="margin-bottom: 50px;">Een platform dat je helpt met het zaaien en oogsten van je eigen bio groenten en -fruit.  Ga samen met kotstudenten en Mechelaars aan de slag, bouw een community op en geniet van alle groene lekkernijen.</p>
             </div>
             <a href="registerstudent.php" class="btn btn--yellow">Schrijf je in</a>
+            <a href="login.php" style="margin-left:10px" class="white--60 underline">Login</a>
         </div>
     </section>
 </body>

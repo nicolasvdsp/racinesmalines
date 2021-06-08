@@ -15,6 +15,7 @@
     --ne_offBlack: #13171a;
     --ne_offBlack--60: #13171a96;
     --ne_offWhite: #fff9fc;
+    --ne_offWhite--60: #fff9fc96;
     --ne_grey: #89888a;
     --ne_lightGrey: #c4c0c3;
 }
@@ -46,24 +47,7 @@
     font-weight: bold;
 }
 
-.white{
-    color: var(--ne_offWhite);
-}
-.yellow{
-    color: var(--pr_bananaYellow);
-}
-.black{
-    color: var(--ne_offBlack);
-}
-.bold{
-    font-style: bold;
-}
-.underline{
-    text-decoration: underline;
-}
-.alignC{
-    text-align: center;
-}
+
 h1, h2, h3, h4, h5, h6{
     font-family: Muriza;
     font-weight: bold;
@@ -94,6 +78,31 @@ h3{
 .bodyText, p{
     margin-bottom: 35px;
     line-height: 24.1px;
+}
+.pTitle{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.white{
+    color: var(--ne_offWhite);
+}
+.white--60{
+    color: var(--ne_offWhite--60);
+}
+.yellow{
+    color: var(--pr_bananaYellow);
+}
+.black{
+    color: var(--ne_offBlack);
+}
+.bold{
+    font-style: bold;
+}
+.underline{
+    text-decoration: underline;
+}
+.alignC{
+    text-align: center;
 }
 
 .btnSpaceBefore{

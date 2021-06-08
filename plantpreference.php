@@ -39,8 +39,8 @@
         <a href="settings.php" class="btn--back"></a>
     </div>
 
-    <h2 class="black">Geef aan welke plantjes je wil telen</h2>
-    <p>Kies de groenten en fruit waar je hulp mee wilt</p>
+    <h2 class="black">Plant voorkeuren</h2>
+    <p class="pTitle">Kies de groenten en fruit waar je hulp mee wilt</p>
     
     <div class="checkboxes">        
         <?php foreach($allPlants as $plant): ?>
@@ -55,7 +55,7 @@
         <?php endforeach; ?>
     </div>
     
-    <p>We raden aan</p>
+    <p class="pTitle">We raden aan</p>
     <div class="cardview">
         <h3>Courgettes</h3>
         <p>Momenteel is het het seizoen van de courgetten, als je ze nu plant zijn ze binnen 3 maanden klaar voor de oogst.</p>

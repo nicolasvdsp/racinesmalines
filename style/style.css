@@ -71,6 +71,16 @@
     background-position: 0px -40px;
     background-size: 372px 511px;
 }
+.bg--caputsteen, .bg--caputsteen--map{
+    background-image: url(../assets/samentuincaputsteen.jpeg);
+    background-size: cover;
+    height: 245px;
+}
+.bg--caputsteen--map{
+    background-image: url(../assets/mapcaputsteenpark.png);
+    display: flex;
+    align-items: flex-end;
+}
 
 .intro{
     margin-top: 520px;

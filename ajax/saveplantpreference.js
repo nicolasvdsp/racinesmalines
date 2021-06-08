@@ -5,8 +5,8 @@ plantpreferences.forEach((plantpreference) => {
     let prefCheckbox = plantpreference.querySelector('.prefCheckbox');
     // console.log(prefCheckbox);
 
-    prefCheckbox.addEventListener('change', (e) => {
-        e.preventDefault();
+    prefCheckbox.addEventListener('change', () => {
+        
 
         let userId = prefCheckbox.dataset.userid;
         let plantId = prefCheckbox.dataset.plantid;

@@ -33,7 +33,7 @@
    
     <div class="cardview" style="padding-bottom: 24px;">
         <h3 class="btnSpaceBefore">Navigeer naar de moestuin</h3>
-        <a href="https://www.google.be" class="btn btn--green btn--margin maps" data-gardenname="<?php echo $userdata->garden_name; ?>" data-gardencity="<?php echo $userdata->garden_city; ?>" data-gardenstreet="<?php echo $userdata->garden_street; ?>" data-gardenhousenumber="<?php echo $userdata->garden_houseNumber; ?>">Navigeer met Maps</a>
+        <a href="https://www.google.com/maps/dir/Mechelen/<?php echo $userdata->garden_street; ?>+<?php echo $userdata->garden_houseNumber; ?>,+<?php echo $userdata->garden_city; ?>" class="btn btn--green btn--margin maps" data-gardenname="<?php echo $userdata->garden_name; ?>" data-gardencity="<?php echo $userdata->garden_city; ?>" data-gardenstreet="<?php echo $userdata->garden_street; ?>" data-gardenhousenumber="<?php echo $userdata->garden_houseNumber; ?>">Navigeer met Maps</a>
     </div>
     <a class="cardview cardview--connect btn--max"><h3 class="white alignC">Maak kennis met leden uit je moestuin</h3></a>
     <div class="cardview">
@@ -41,7 +41,7 @@
         <a href="#" class="btn btn--green btn--margin lock">Ontgrendel</a>
         <p class="info" style="margin-bottom: 0px;">Momenteel op slot</p>
     </div>
-    <div class="cardview">
+    <div class="cardview redirect">
         <h3>Kies zaden die je gaat planten</h3>
         <p class="info" style="margin-bottom: 0px;">Als je deze informatie invult krijg je betere suggesties in de app</p>
     </div>
@@ -55,6 +55,13 @@
 
 </div>
 </section>
+<script>
+    let card = document.querySelector('.redirect');
+    card.addEventListener('click', (e) => {
+        location.replace("plantpreference.php")
+        
+    })
+</script>
 <script src="javascript/location.js"></script>
 </body>
 </html>
