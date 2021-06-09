@@ -26,10 +26,10 @@
 
     <div class="logo--header">
         <img src="assets/logo_racinesmalines.svg" alt="Logo Racines Malines">
-        <a href="gardendetail.php">Lid <span class="underline"><?php echo $userdata->garden_name; ?></span></a>
+        <a href="parkdetail.php">Lid <span class="underline"><?php echo $userdata->garden_name; ?></span></a>
     </div>
 
-    <p><?php echo $userdata->firstname; ?></p>
+    <h3 class="black marginBottom" style="margin-bottom: 30px;">Welkom <?php echo $userdata->firstname; ?></h3 class="black">
    
     <div class="cardview" style="padding-bottom: 24px;">
         <h3 class="btnSpaceBefore">Navigeer naar de moestuin</h3>

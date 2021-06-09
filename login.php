@@ -26,7 +26,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registreer als student</title>
+    <title>Aanmelden</title>
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/paragraphstyles.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
@@ -46,7 +46,7 @@
         </div>
         <div class="form__input">
             <label for="password">Wachtwoord</label>
-            <input type="text" id="password" name="password" placeholder="• • • • • • • •">
+            <input type="password" id="password" name="password" placeholder="• • • • • • • •">
         </div>
 
         <input type="submit" class="btn btn--form" value="Aanmelden">

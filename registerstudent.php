@@ -87,7 +87,7 @@
         </div>
         <div class="form__input">
             <label for="password">Wachtwoord</label>
-            <input type="text" id="password" name="password" placeholder="• • • • • • • •">
+            <input type="password" id="password" name="password" placeholder="• • • • • • • •">
         </div>
 
         <input type="submit" class="btn btn--form" value="Volgende">

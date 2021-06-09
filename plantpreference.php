@@ -36,7 +36,7 @@
     
 
     <div class="progressbar">
-        <a href="settings.php" class="btn--back"></a>
+        <a href="usersettings.php" class="btn--back"></a>
     </div>
 
     <h2 class="black">Plant voorkeuren</h2>
