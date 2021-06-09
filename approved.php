@@ -32,8 +32,8 @@
 <div class="app">
     
     <h1 class="white" style="margin-top: 505px;">De aanvraag werd aanvaard!</h1>
-    <p class="bodyText white">U heeft nu toegang tot de moestuin in het <span class="yellow bold"><?php echo $userdata->garden_preference; ?>, Mechelen</span></p>
-    <a href="intro.php" class="btn btn--white">Let's start</a>
+    <p class="bodyText white">U heeft nu toegang tot de moestuin in het <span class="yellow bold"><?php echo $userdata->garden_name; ?>, Mechelen</span></p>
+    <a href="index.php" class="btn btn--white">Let's start</a>
     
 
 </div>

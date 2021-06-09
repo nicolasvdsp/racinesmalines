@@ -343,6 +343,12 @@ input[type="radio"]{
     width: calc(100% + 50px);
     filter: drop-shadow(0px 4px 8px rgb(0, 0, 0, 0.25));
 }
+.navbar--fixed{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+}
 .navbar__btn__icon{
     width: 24px;
     color: var(--ne_offBlack--60);
@@ -424,4 +430,30 @@ input[type="radio"]{
     width: 375px;
     height: 200px;
     background-size: cover; 
+}
+
+.headerUser{
+    margin-top: 30px;
+    
+}
+.headerUser__img{
+    height: 54px;
+    width:  54px;
+    border-radius: 16px;
+}
+.headerUser__cta{
+    margin-left: 16px;
+}
+
+.settings li{
+    border-top: 1px solid var(--ne_grey);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.settings li:last-of-type{
+    border-bottom: 1px solid var(--ne_grey);
+}
+.settings li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

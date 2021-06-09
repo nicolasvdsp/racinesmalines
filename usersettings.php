@@ -25,10 +25,25 @@
 <div class="app">
 
 
-  
+    <h2 class="black marginTop">Instellingen</h2>
 
+    <div class="headerUser flexStart">
+        <img class="headerUser__img" src="assets/profilepictures/<?php echo $userdata->profilepicture; ?>" alt="Profiel foto">
+        <div class="headerUser__cta">
+            <h3 class="marginBottomSmall"><?php echo $userdata->firstname . ' ' . $userdata->lastname; ?></h3>
+            <a class="underline" href="editusersettings.php">Wijzig accountgegevens</a>
+        </div>
+    </div>
 
-    <nav class="navbar" style="padding: 50px;">
+    <ul class="settings marginTop">
+        <li><a href="#">Verander van moestuin</a></li>
+        <li><a href="#">Meldingen</a></li>
+        <li><a href="plantpreference.php">Voorkeuren</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="logout.php">Logout</a></li>
+    </ul>
+
+    <nav class="navbar navbar--fixed">
         <a href="index.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Home</a>
         <a href="tips.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Tips</a>
         <a href="chat.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Chats</a>
