@@ -50,7 +50,7 @@
         <a href="index.php" class="navbar__btn navbar__btn--selected"><div class="navbar__btn__icon navbar__btn--selected"></div>Home</a>
         <a href="tips.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Tips</a>
         <a href="chat.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Chats</a>
-        <a href="settings.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Instellingen</a>
+        <a href="usersettings.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Instellingen</a>
     </nav>
 
 </div>

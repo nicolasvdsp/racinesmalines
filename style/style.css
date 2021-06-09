@@ -52,6 +52,9 @@
 .bg__light{
     background-color: var(--se_lightCream);
 }
+.bg__white{
+    background-color: var(--ne_offWhite);
+}
 .bg__green{
     background-color: var(--pr_meadowGreen);
 }
