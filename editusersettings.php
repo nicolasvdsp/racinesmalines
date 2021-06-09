@@ -26,40 +26,8 @@
 <body class="bg__dark">
 <section class="center  bg__light">
 <div class="app">
-    <div class="progressbar">
-        <a href="registerstudent.php" class="btn--back"></a>
-        <div class="progress">
-            <a href="#" class="bar bar--filled"></a>
-            <a href="#" class="bar bar--filled"></a>
-            <a href="#" class="bar"></a>
-        </div>
-    </div>
-
-    <h2>Studentenkaart</h2>
-    <p class="bodyText">Maak een foto van de voor en achterzijde van je studentenkaart zodat we deze kunnen verifiëren.</p>
-
-    <form action="" method="POST" enctype="multipart/form-data">
-        <div class="uploadzone">
-            <h3>Voorkant</h3>
-            <figure class="prevContainer">
-                <img class="prev" src="assets/emptystate_foto.png" alt="">
-            </figure>
-            <input type="file" class="addStudentCard" id="addStudentCardFront" name="addStudentCardFront">
-        </div>
-        <div class="uploadzone">
-            <h3>Achterkant</h3>
-            <figure class="prevContainer">
-                <img class="prev" src="assets/emptystate_foto.png" alt="">
-            </figure>
-            <input type="file" class="addStudentCard" id="addStudentCardBack" name="addStudentCardBack">
-        </div>
-        
-        <input type="submit" class="btn btn--form" value="Volgende" name="submitStudentCard">
-    </form>
-
-    <?php if(isset($error)): ?>
-        <p class="feedback fail"><?php echo $error ?></p>
-    <?php endif; ?>
+    
+    
 
 </div>
 </section>

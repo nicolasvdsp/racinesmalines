@@ -72,7 +72,7 @@ h4{
     line-height: 19.25px;
 }
 
-.bodyText, a, p, .form__input *, .form__radio *, .twocolumns *, span{
+.bodyText, a, p, .form__input *, .form__radio *, .twocolumns *, span, input{
     color: var(--ne_offBlack);
     font-family: Friends;
     font-size: 16px;
@@ -125,6 +125,9 @@ h4{
 }
 .marginTop{
     margin-top: 30px;
+}
+.marginTopBig{
+    margin-top: 55px;
 }
 .noMarginTop{
     margin-top: 0px;

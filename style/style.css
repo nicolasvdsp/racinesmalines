@@ -457,3 +457,23 @@ input[type="radio"]{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.borderBottom{
+    border-bottom: 1px solid var(--ne_lightGrey);
+    padding-bottom: 20px;
+}
+
+input{
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 34px;
+    width: 170px;
+    display: block;
+    margin: auto;
+    background-color: var(--se_lightCream);
+    background-image: url(../assets/icons/icon_magnifier.svg);
+    background-position: 8px 10px;
+    background-repeat: no-repeat;
+}
