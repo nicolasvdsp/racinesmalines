@@ -44,7 +44,7 @@
     
     <div class="checkboxes">        
         <?php foreach($allPlants as $plant): ?>
-            <div class="form__input--twocolumns">
+            <div class="twocolumns">
                 <?php if(Usersplantpreference::isBoxChecked($sessionId, $plant->id) === 1): ?>    
                     <input type="checkbox" class="prefCheckbox" id="<?php echo strtolower($plant->name); ?>" name="<?php echo strtolower($plant->name); ?>" value="<?php echo $plant->name; ?>" data-userid="<?php echo $sessionId; ?>" data-plantid="<?php echo $plant->id; ?>" data-ischecked="<?php echo Usersplantpreference::isBoxChecked($sessionId, $plant->id); ?>" checked>
                 <?php else: ?>
@@ -65,10 +65,10 @@
     </div>
 
     <nav class="navbar">
-        <a href="index.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Home</a>
+        <a href="index.php" class="navbar__btn navbar__btn--selected"><div class="navbar__btn__icon navbar__btn--selected"></div>Home</a>
         <a href="tips.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Tips</a>
         <a href="chat.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Chats</a>
-        <a href="settings.php" class="navbar__btn navbar__btn--selected"><div class="navbar__btn__icon navbar__btn--selected"></div>Instellingen</a>
+        <a href="settings.php" class="navbar__btn"><div class="navbar__btn__icon"></div>Instellingen</a>
     </nav>
 
 </div>

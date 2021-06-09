@@ -25,11 +25,11 @@
     src: url(../assets/fonts/Friends-Normal.ttf);
     font-style: normal;
 }
-@font-face {
+/* @font-face {
     font-family: Friends;
     src: url(../assets/fonts/Friends-Regular.ttf);
-    font-size: thin;
-}
+    font-size: regular;
+} */
 @font-face {
     font-family: Friends;
     src: url(../assets/fonts/Friends-NormalItalic.ttf);
@@ -38,7 +38,7 @@
 @font-face {
     font-family: Friends;
     src: url(../assets/fonts/Friends-SemiBold.ttf);
-    font-style: bold;
+    font-weight: bold;
 }
 
 @font-face {
@@ -67,14 +67,23 @@ h3{
     margin-bottom: 9px;
     line-height: 27.7px;
 }
+h4{
+    font-size: 16px;
+    line-height: 19.25px;
+}
 
-.bodyText, a, p, .form__input *, .form__radio *, .form__input--twocolumns *, span{
+.bodyText, a, p, .form__input *, .form__radio *, .twocolumns *, span{
     color: var(--ne_offBlack);
     font-family: Friends;
     font-size: 16px;
-    font-style: normal;
+    font-weight: 300;
 }
-
+.secondaryBodyText{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 21.08px;
+    color: var(--ne_offBlack--60);
+}
 .bodyText, p{
     margin-bottom: 35px;
     line-height: 24.1px;
@@ -95,6 +104,9 @@ h3{
 .black{
     color: var(--ne_offBlack);
 }
+.black--60{
+    color: var(--ne_offBlack--60);
+}
 .bold{
     font-style: bold;
 }
@@ -110,6 +122,18 @@ h3{
 }
 .btnSpaceAfter{
     margin-top: 23px;
+}
+.marginTop{
+    margin-top: 30px;
+}
+.noMarginTop{
+    margin-top: 0px;
+}
+.noMarginBottom{
+    margin-bottom: 0px;
+}
+.marginBottom--small{
+    margin-bottom: 10px;
 }
 
 .btn{
@@ -140,5 +164,13 @@ h3{
 .togglemenu__selected{
     background-color: var(--pr_bananaYellow);
     border-radius: 10px;
+}
+.spaceBetweenElements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block{
+    display: block;
 }
 

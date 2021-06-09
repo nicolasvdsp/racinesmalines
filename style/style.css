@@ -15,6 +15,8 @@
     --ne_offBlack: #13171a;
     --ne_offBlack--60: #13171a96;
     --ne_offWhite: #fff9fc;
+    --ne_offWhite--60: #fff9fc96;
+    --ne_offWhite--20: #fff9fc32;
     --ne_grey: #89888a;
     --ne_lightGrey: #c4c0c3;
 }
@@ -81,6 +83,17 @@
     display: flex;
     align-items: flex-end;
 }
+.bg--veg--courgette, .bg--veg--pijpajuin, .bg--veg--wortel{
+    background-image: url(../assets/bg_courgette.png);
+    background-size: cover;
+    height: 183px;
+}
+.bg--veg--wortel{
+    background-image: url(../assets/bg_wortel.png);
+}
+.bg--veg--pijpajuin{
+    background-image: url(../assets/bg_pijpajuin.png);
+}
 
 .intro{
     margin-top: 520px;
@@ -122,6 +135,14 @@
     background-image: url(../assets/icons/icon_back.svg);
     background-repeat: no-repeat;
 }
+.btn--back--round{
+    background-color: var(--ne_offWhite);
+    background-position: 45% 45%;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
 .btn--large{
     width: 172px;
 }
@@ -136,6 +157,16 @@
     position: fixed;
     right: 20px;
     bottom: 20px;
+}
+.btn--plusmin{
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: var(--pr_bananaYellow);
+    width: 70px;
+    margin-right: 10px;
 }
 
 .progressbar{
@@ -165,7 +196,7 @@
     display: block;
     width: 100%;
 }
-.form__input--twocolumns{
+.twocolumns{
     display: inline-block;
     width: 49%;
 }
@@ -194,13 +225,23 @@ input[type="radio"]{
 
 
 /* ----- CARDS ----- */
-.cardview{
+.cardview, .cardview--square{
     border-radius: 10px;
     background-color: var(--ne_offWhite);
     width: 100%;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
     padding: 16px 10px 16px 16px;
     margin-bottom: 30px;
+}
+.test{
+    background: url(ass);
+}
+
+.cardview--square{
+    width: 208px;
+    height: 208px;
+    background-size: cover;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
 }
 
 .cardview--connect{
@@ -213,7 +254,43 @@ input[type="radio"]{
     align-items: center;
     padding: 33px;
 }
-
+.cardview--recept{
+    padding-top: 30px;
+    margin-right: 35px;
+}
+.cardview__info{
+    position: relative;
+    bottom: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 88px;
+    width: 180px;
+    background-color: var(--ne_offWhite);
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.cardview__info__text{
+    display: block;
+    width: 80px;
+    height: 40px;
+}
+.cardview--numbered--one, .cardview--numbered--two, .cardview--numbered--three{
+    padding-top: 20px;
+    padding-left: 50px;
+    position: relative;
+    left: -25px;
+    width: 375px;
+    background-image: url(../assets/liststyle_one.svg);
+    background-repeat: no-repeat;
+    background-position-x: 25px;
+}
+.cardview--numbered--two{
+    background-image: url(../assets/liststyle_two.svg);
+}
+.cardview--numbered--three{
+    background-image: url(../assets/liststyle_three.svg);
+}
 
 /* ----- VISUAL STYLES ----- */
 .info{
@@ -253,17 +330,16 @@ input[type="radio"]{
     padding: 25px;
     height: 98px;
     background-color: var(--ne_offWhite);
+    color: var(--ne_offBlack--60);
     display: flex;
     justify-content: space-between;
-    align-content: flex-end;
     align-items: center;
     position: sticky;
     bottom: 0;
     transform: translateX(-25px);
     width: calc(100% + 50px);
-    filter: drop-shadow(0px 4px 8px rgb(0,0,0,0.25));
+    filter: drop-shadow(0px 4px 8px rgb(0, 0, 0, 0.25));
 }
-
 .navbar__btn__icon{
     width: 24px;
     color: var(--ne_offBlack--60);
@@ -290,6 +366,7 @@ input[type="radio"]{
 }
 .navbar__btn--selected{
     color: var(--ne_offBlack);
+    font-weight: bold;
     background-position-y: -24px;
 }
 
@@ -323,4 +400,25 @@ input[type="radio"]{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.inlineblock{
+    display: inline-block;
+}
+
+.verticalScroll{
+    display: flex;
+    overflow: scroll;
+    /* white-space: nowrap; */
+}
+.verticalScroll::-webkit-scrollbar{
+    display: none;
+}
+
+
+.header--photo{
+    position: relative;
+    left: -25px;
+    width: 375px;
+    height: 200px;
+    background-size: cover; 
 }
