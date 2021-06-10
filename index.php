@@ -39,7 +39,7 @@
     <div class="cardview">
         <h3 class="btnSpaceBefore">Open de poort van de moestuin</h3>
         <a href="#" class="btn btn--green btn--margin lock">Ontgrendel</a>
-        <p class="info" style="margin-bottom: 0px;">Momenteel op slot</p>
+        <p class="info changeinfo" style="margin-bottom: 0px;">Momenteel op slot</p>
     </div>
     <div class="cardview redirect">
         <h3>Kies zaden die je gaat planten</h3>
@@ -56,6 +56,39 @@
 </div>
 </section>
 <script>
+    let lock = document.querySelector('.lock');
+    let msg = document.querySelector('.changeinfo');
+
+    lock.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('open');
+        lock.innerText = 'sluiten';
+        lock.style.color = '#13171a';
+        lock.style.backgroundColor = '#ffbf46';
+        msg.innerHTML = `Sluit over 5 seconden`;
+
+            let i = 5;
+            
+
+            var a = setInterval(() => {
+                console.log(i);
+                i--;
+                msg.innerHTML = `Sluit over ${i} seconden`;
+                
+                if(i == 0){
+                    clearInterval(a);
+
+                    console.log('close');
+                    lock.innerText = 'Ontgrendel';
+                    lock.style.color = '#fff9fc';
+                    lock.style.backgroundColor = '#1ca078';
+                    msg.innerHTML = 'Momenteel op slot'
+                }
+            }, 1000)
+
+    })
+
+
     let card = document.querySelector('.redirect');
     card.addEventListener('click', (e) => {
         location.replace("plantpreference.php")

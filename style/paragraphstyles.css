@@ -72,7 +72,7 @@ h4{
     line-height: 19.25px;
 }
 
-.bodyText, a, p, .form__input *, .form__radio *, .twocolumns *, span, input{
+.bodyText, a, p, .form__input *, .form__radio *, .twocolumns *, span, .search{
     color: var(--ne_offBlack);
     font-family: Friends;
     font-size: 16px;

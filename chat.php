@@ -50,7 +50,7 @@
     <div class="cardview">
         <h3 class="alignC">Nog geen recente chats</h3>
         <p class="alignC">Vind mensen om mee te chatten uit je moestuin-community</p>
-        <input type="text" placeholder="zoek personen">
+        <input class="search" type="text" placeholder="zoek personen">
     </div>
 
     <nav class="navbar navbar--fixed">
